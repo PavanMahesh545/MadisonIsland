@@ -20,7 +20,7 @@ public class OrderPlacedPage extends BasePage {
 	
 	private By orderAssertionTxtBy = By.xpath("(//h1[text() = \"Your order has been received.\"])");
 	
-	public String checkOutAssertion() {
+	public String getConfirmMessage() {
 		try {
 			basePage.waitForVisibilityOfElementLocatable(driver, orderAssertionTxtBy);
 			text = driver.findElement(orderAssertionTxtBy).getText();

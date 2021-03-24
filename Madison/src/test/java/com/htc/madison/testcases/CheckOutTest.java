@@ -21,7 +21,7 @@ public class CheckOutTest extends BaseTest {
 		checkOutPage.checkOutForTheProduct(mapData.get("FirstName"), mapData.get("LastName"), mapData.get("Address"), mapData.get("City"),
 										   mapData.get("PostalCode"), mapData.get("Country"), mapData.get("Telephone"));
 	
-		Assert.assertEquals(orderPlacedPage.checkOutAssertion(), "YOUR ORDER HAS BEEN RECEIVED.");
+		Assert.assertEquals(orderPlacedPage.getConfirmMessage(), "YOUR ORDER HAS BEEN RECEIVED.");
 		basePage.signOff();
 	}
 }

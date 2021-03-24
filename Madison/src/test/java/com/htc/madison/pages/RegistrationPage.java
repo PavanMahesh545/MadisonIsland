@@ -45,7 +45,7 @@ public class RegistrationPage {
 		driver.findElement(registerBtnBy).click();
 	}
 	
-	public String registrationAssertionText() {
+	public String getWelcomeMessage() {
 		return driver.findElement(registrationAssertionTextBy).getText();
 	}
 	
