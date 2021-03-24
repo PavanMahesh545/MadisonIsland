@@ -7,8 +7,6 @@ import org.testng.annotations.Test;
 
 import com.htc.madison.BaseTest;
 
-
-
 public class LoginTest extends BaseTest {
 
 	@Test(dataProvider = "Data", dataProviderClass = com.htc.madison.utility.DataProviderManager.class)
@@ -21,8 +19,7 @@ public class LoginTest extends BaseTest {
 			Assert.assertEquals(dashBoardPage.checkValidLogin(),"MY DASHBOARD");
 			basePage.signOff();
 		}
-		
-		else if(mapData.get("Expected").equals("Invalid login or password.")) 
+	     else if(mapData.get("Expected").equals("Invalid login or password.")) 
 			Assert.assertEquals(dashBoardPage.checkInvalidLogin(), "Invalid login or password.");
 	}
 }

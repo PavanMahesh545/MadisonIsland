@@ -151,7 +151,7 @@ public class CheckOutPage extends BasePage {
 			setCity(city);
 			setPinCode(pincode);
 			scroll1();
-			selectCountry(country);
+			//selectCountry(country);
 			setPhoneNumber(phoneNumber);
 			clickBillingInfoContinueBtn();
 //			scroll();

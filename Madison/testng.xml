@@ -7,8 +7,8 @@
 	</listeners>
 	<test name="Madison WebPages Test">
 		<classes>
-			<class name="com.htc.madison.testcases.RegistrationTest" /> 
-			<class name="com.htc.madison.testcases.LoginTest" />  
+		<!-- 	<class name="com.htc.madison.testcases.RegistrationTest" /> 
+			<class name="com.htc.madison.testcases.LoginTest" />  --> 
 			<class name="com.htc.madison.testcases.CheckOutTest" /> 
 		</classes>
 	</test>
